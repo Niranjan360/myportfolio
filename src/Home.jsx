@@ -12,7 +12,7 @@ const Home = () => {
         <Navbar/>
         <div className="dashboard">
             <div className="db1">
-                <h1>Hi I'am <span>Niranjan</span> Web Designer</h1>
+                <h1>Hi I'am <span>Niranjan</span> React Developer</h1>
                 <div>
                 <button>Contact me</button>
                 </div>
