@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import pic from './pic2.jpg'
+import pic from './persnol.jpg'
 import html from './html.png'
 import css from './css.png'
 import js from './js.png'

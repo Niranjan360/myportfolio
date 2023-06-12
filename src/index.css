@@ -139,75 +139,82 @@ font-size: 30px;
 
 .skills{
   margin: 70px auto;
-  padding: 10px 100px;
+  /* padding: 10px 100px; */
 }
 .skills h1{
   margin: 40px 0px;
   position: sticky;
   top: 70px;
 }
+.cards{
+  position: relative;
+  scroll-snap-type:y mandatory;
+}
 .cards div{
   color: white;
-  background-color: rgb(26, 26, 26);
+  /* background-color: #05133e; */
+  background: linear-gradient(rgb(0,196,130) , rgb(0,166,196));
   background-repeat: no-repeat;
   background-size: cover;
-  width: 850px;
+  width: 100%;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px auto;
   padding: 20px;
-  border-radius: 0px 50px 50px 50px;
+  /* border-radius: 15px; */
   transition: 0.5s;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.46);
   position: sticky;
   top: 125px;
+  scroll-snap-align: top;
 }
 .cards div:hover{
-  transform: scale(1.1);
+  /* transform: scale(1.01); */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
 }
-.cards div:hover img{
-  transform: scale(1.1);
-  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.437));
-}
+
 .cards div img{
-  width: 150px;
+  width: 170px;
   margin: 20px 50px;
   transition: 0.3s;
 }
 .cards div p{
   width: 500px;
+  font-size: 25px;
 }
 
 /* ------------CONTACT PAGE----------- */
 
-.contact-page>h1{
-  text-align: center;
-  margin-bottom: 20px;
-}
 .contact-form{
-  width: 400px;
-  height: auto;
-  background: linear-gradient(20deg , rgb(91,254,249),rgb(30,22,222));
+  width: 85%;
+  height: 89vh;
+  background: url("https://wallpapercave.com/wp/wp4923991.png");
+  background-size: cover;
+  background-position: 100px;
   padding: 20px;
-  margin: 20px auto;
+  margin: auto;
   border: solid 1px black;
-  border-radius: 15px;
-
+  display: flex;
+  align-items: center;
+}
+.contact-form h1{
+  text-align: left;
+  padding-left: 70px;
+  margin: 20px 0px;
+  color: white;
 }
 .contact-form form{
-  width: 100%;
+  width:60%;
+  margin: 20px 0px;
 }
 .contact-form form input{
-  width: 80%;
+  width: 70%;
   height: 40px;
-  margin: 10px auto;
-  padding: 4px 20px;
+  margin: 10px;
+  padding: 4px 10px;
   border: none;
   border-radius: 5px;
   transition: 0.3s;
-  text-align: center;
   font-size: 16px;
 }
 .contact-form form input:focus{
@@ -220,11 +227,15 @@ font-size: 30px;
   letter-spacing: 1px;
 }
 .contact-form form input[type="submit"]{
-  width: 80%;
+  width: 70%;
   background-color: black;
   color: white;
+  font-weight: 500;
+  font-size: 18px;
 }
 .contact-form form input[type="submit"]:hover{
-  width: 50%;
   letter-spacing: 1px;
+  background-color: white;
+  color: black;
 }
+
