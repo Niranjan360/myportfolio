@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Maven+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@800&display=swap');
 
 *{
   margin: 0;
@@ -24,7 +24,9 @@ hr{
 .hamberger{
   display: none;
 }
-
+.logo h1{
+  font-family: 'Ysabeau SC', sans-serif;
+}
 
 /* desktop */
 @media (min-width:1200px) 
@@ -46,7 +48,6 @@ hr{
     text-decoration: none;
   }
   .logo h1{
-    font-family: 'EB Garamond', serif;
     font-size: 30px;
   }
   
@@ -416,7 +417,6 @@ hr{
     text-decoration: none;
   }
   .logo h1{
-    font-family: 'EB Garamond', serif;
     font-size: 27px;
   }
   
@@ -1176,7 +1176,6 @@ hr{
     text-decoration: none;
   }
   .logo h1{
-    font-family: 'EB Garamond', serif;
     font-size: 30px;
   }
   .nav-links{
@@ -1196,15 +1195,16 @@ hr{
     background-color: rgba(0, 0, 0, 0.486);
     padding: 5px;
     border-radius: 5px;
+    backdrop-filter: blur(15px);
   }
   .menu-links a{
     display: block;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 300;
     text-align: left;
     color: white;
     text-decoration: none;
-    margin: 5px 0px;
+    margin: 10px 0px;
     transition: 0.2s;
   }
   .menu-links a:hover{
@@ -1249,6 +1249,7 @@ hr{
   
   .db1 h1{
     width: 300px;
+    font-size: 25px;
   }
   .db1 span{
     color: crimson;
@@ -1267,7 +1268,7 @@ hr{
     width: 100%;
     height: 100%;
     background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 500;
     color: white;
     /* padding: 15px 35px; */
@@ -1284,12 +1285,12 @@ hr{
   }
 
   .skills{
-    margin: 50px auto;
+    margin: 80px auto;
     /* padding: 10px 100px; */
   }
   .skills h1{
     color: #ffffff;
-    margin: 40px 0px;
+    margin: 30px 0px;
     position: sticky;
     top: 80px;
   }
@@ -1339,13 +1340,14 @@ hr{
   }
 
   .cards div img{
-    width: 130px;
+    width: 110px;
     margin: 20px 20px;
     transition: 0.3s;
   }
   .cards div p{
-    width: 400px;
-    font-size: 15px;
+    width: 600px;
+    font-size: 13px;
+    margin: 10px 0px;
   }
 
   /* ------------CONTACT PAGE----------- */
@@ -1469,6 +1471,8 @@ hr{
     margin: 10px 0px;
     border: none;
     border-radius: 5px;
+    font-size: 17px;
+    
   }
   .home-contact form input::placeholder{
     font-size: 17px;
@@ -1523,7 +1527,7 @@ hr{
     position: absolute;
     width: 100%;
     color: white;
-    font-size: 700%;
+    font-size: 200%;
     letter-spacing: 20px;
   }
   .projects div{
@@ -1553,10 +1557,5 @@ hr{
     object-fit: scale-down;
     border-radius: 50%;
     transition: 0.3s;
-  }
-
-
-
-
-  
+  } 
 }
