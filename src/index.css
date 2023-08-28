@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
 
 *{
   margin: 0;
@@ -7,235 +10,1553 @@
   box-sizing: border-box;
   font-family: 'Maven Pro', sans-serif;
 }
-nav{
-  width: 100%;
-  background-color:white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 100px;
-  margin: auto;
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-}
-.logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo a{
-  color: black;
-  text-decoration: none;
-}
-.logo h1{
-font-family: 'EB Garamond', serif;
-font-size: 30px;
-
-}
-.logo img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  /* animation: logoanime 1s linear ; */
-  margin: 0px 5px;
-}
-@keyframes logoanime {
-  0%{
-    transform: scale(0.1);
-  }
-  50%{
-    transform: scale(2);
-  }  
-  100%{
-    transform:scale(1);
-  }
-}
-.nav-links a{
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 300;
-  color: black;
-  text-decoration: none;
-  margin: 0px 20px;
-}
-.nav-links a::after{
-  content: '';
+body{
   background-color: black;
-  display: block;
-  width: 0%;
-  height: 2px;
-  margin: 4px auto;
-  border-radius: 30px;
-  transition: 0.3s;
-  transform-origin: left;
+  width: 100vw;
 }
-.nav-links a:hover::after{
-  width: 100%;
-}
-
-
-.dashboard{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 10px auto;
-
-}
-.dashboard img{
-  width: 450px;
-  height: 550px;
-  border-radius: 150px 50px;
-  /* box-shadow: 0px 0px 40px rgba(60, 60, 60, 0.259); */
-  animation: animepic 2s ease;
-}
-@keyframes animepic {
-  0%{
-    border-radius: 150px 50px;
-  }
-  50%{
-    border-radius: 50px 150px;
-
-  }
-  100%{
-    border-radius: 150px 50px;
-  }
-}
-.db1 h1{
-  width: 300px;
-}
-.db1 span{
-  color: crimson;
-  display: block;
-}
-.db1>div{
-  background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
-  width: 200px;
-  height: 50px;
-  padding: 1px;
-  margin: 20px auto;
-  border-radius: 30px;
-}
-.db1 button{
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
-  font-size: 21px;
-  font-weight: 500;
-  color: white;
-  /* padding: 15px 35px; */
-  border-radius: 30px;
+hr{
+  width: 96%;
+  margin: 100px auto;
   border: none;
-  transition: 0.3s;
-  animation: btnanime 0.5s linear;
+  border-top: solid 1px rgb(221, 221, 221);
+  border-radius: 10px;
+}
+.hamberger{
+  display: none;
 }
 
-.db1 button:hover{
-  background:white;
-  color: rgb(30,22,222);
-  letter-spacing: 2px;
+
+/* desktop */
+@media (min-width:1200px) 
+{
+  nav{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3%;
+    margin: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+  .logo a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .logo h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+  }
+  
+  .nav-links a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+  }
+  .nav-links a::after{
+    content: '';
+    background-color: white;
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 4px auto;
+    border-radius: 30px;
+    transition: 0.3s;
+    transform-origin: left;
+  }
+  .nav-links a:hover::after{
+    width: 100%;
+  }
+
+
+  .dashboard{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px auto;
+
+  }
+  .db2{
+    background: url(./images/persnol.jpg);
+    background-size: cover;
+    background-position: center 0px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+  }
+  
+  .db1 h1{
+    width: 300px;
+  }
+  .db1 span{
+    color: crimson;
+    display: block;
+  }
+  .db1>div{
+    background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
+    width: 200px;
+    height: 50px;
+    padding: 1px;
+    margin: 20px auto;
+    border-radius: 30px;
+  }
+  .db1 button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+    /* padding: 15px 35px; */
+    border-radius: 30px;
+    border: none;
+    transition: 0.3s;
+    animation: btnanime 0.5s linear;
+  }
+
+  .db1 button:hover{
+    background:white;
+    color: rgb(30,22,222);
+    letter-spacing: 2px;
+  }
+
+  .skills{
+    margin: 70px auto;
+    /* padding: 10px 100px; */
+  }
+  .skills h1{
+    margin: 40px 0px;
+    position: sticky;
+    top: 70px;
+  }
+  .skill-cont{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .sider{
+    width: 50%;
+    height: 70vh;
+    background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW5tNjFtZjl4YXczdTVrNjlpem53NHRleGQyM3dlMzMyZ2NtOTdtNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4H5jdBI1AEvS2xlra6/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: sticky;
+    top: 125px;
+  }
+  .cards{
+    width: 50%;
+    position: relative;
+    scroll-snap-type:y mandatory;
+  }
+  .cards div{
+    color: rgb(52, 52, 52);
+    background: linear-gradient(13deg,lightblue,rgb(151, 255, 151));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 40vh;
+    margin: 30px auto;
+    /* border-top: solid rgb(0, 243, 194) 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+    position: sticky;
+    top: 200px;
+    scroll-snap-align: top;
+  }
+  .cards div:hover{
+    /* transform: scale(1.01); */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
+  }
+
+  .cards div img{
+    width: 170px;
+    margin: 20px 50px;
+    transition: 0.3s;
+  }
+  .cards div p{
+    width: 500px;
+    font-size: 20px;
+  }
+
+  /* ------------CONTACT PAGE----------- */
+
+  .contact-form{
+    width: 85%;
+    height: 89vh;
+    background: url("https://wallpapercave.com/wp/wp4923991.png");
+    background-size: cover;
+    background-position: 100px;
+    padding: 20px;
+    margin: auto;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+  }
+  .contact-form h1{
+    text-align: left;
+    padding-left: 70px;
+    margin: 20px 0px;
+    color: white;
+  }
+  .contact-form form{
+    width:60%;
+    margin: 20px 0px;
+  }
+  .contact-form form input{
+    width: 70%;
+    height: 40px;
+    margin: 10px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  .contact-form form input:focus{
+    border: none;
+    outline: none;
+    transform: scale(1.1);
+  }
+  .contact-form form input:hover{
+    transform: scale(1.1);
+    letter-spacing: 1px;
+  }
+  .contact-form form input[type="submit"]{
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .contact-form form input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background-color: white;
+    color: black;
+  }
+
+  .about{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+  }
+  .about div:first-child{
+    width: 49%;
+  }
+  .about div:last-child{
+    width: 49%;
+  }
+  .about h1{
+    font-size: 40px;
+    margin: 20px auto;
+  }
+  .about h1 span{
+    color: rgb(0, 243, 194);
+    font-size: 60px;
+    font-family: 'Tourney', cursive;
+  }
+  .about p{
+    font-style: 18px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .about p span{
+    color: rgb(0, 243, 194);
+    font-weight: 700;
+  }
+  .home-contact{
+    background: linear-gradient(130deg,#94ffa1,#cfdcdc);
+    width: 100%;
+    height: 600px;
+    margin: 70px auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .home-contact form{
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .home-contact form input{
+    display: block;
+    width: 300px;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+  }
+  .home-contact form input::placeholder{
+    font-size: 17px;
+  }
+  .home-contact form input[type="checkbox"]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 20px;
+    accent-color: #94ffa1;
+  }
+  .home-contact label{
+    color: #94ffa1;
+    margin: 10px;
+  }
+  .home-contact h1{
+    font-size: 90px;
+    font-family: 'Bakbak One', cursive;  
+  }
+  .home-contact form button{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #94ffa1;
+    padding: 10px 30px;
+    outline: #94ffa1 solid 1px;
+    outline-offset: 3px;
+    border-radius: 5px;
+    margin: 30px auto 10px auto;
+    transition: 0.5s;
+  }
+  .home-contact form button:hover{
+    transform: scale(1.1);
+  }
+  .projects{
+    width: 100%;
+    height: 500px;
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .projects h1{
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 700%;
+    letter-spacing: 20px;
+  }
+  .projects div{
+    background-color: rgba(173, 173, 173, 0.444);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    outline: #ffffff solid 3px;
+    outline-offset: 10px;
+
+    font-size: 22px;
+    color: white;
+
+    transition: 0.4s;
+  }
+
+  .projects div:hover img{
+    transform: scale(1.1);
+  }
+
+  .projects div img{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    object-fit: scale-down;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+
+
+
+  
 }
 
-.skills{
-  margin: 70px auto;
-  /* padding: 10px 100px; */
-}
-.skills h1{
-  margin: 40px 0px;
-  position: sticky;
-  top: 70px;
-}
-.cards{
-  position: relative;
-  scroll-snap-type:y mandatory;
-}
-.cards div{
-  color: white;
-  /* background-color: #05133e; */
-  background: linear-gradient(rgb(0,196,130) , rgb(0,166,196));
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  /* border-radius: 15px; */
-  transition: 0.5s;
-  position: sticky;
-  top: 125px;
-  scroll-snap-align: top;
-}
-.cards div:hover{
-  /* transform: scale(1.01); */
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
+
+
+
+
+
+
+/* tablet */
+@media (min-width:768px) and (max-width:1199px) 
+{
+  nav{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3%;
+    margin: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+  .logo a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .logo h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 27px;
+  }
+  
+  .nav-links a{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+  }
+  .nav-links a::after{
+    content: '';
+    background-color: white;
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 4px auto;
+    border-radius: 30px;
+    transition: 0.3s;
+    transform-origin: left;
+  }
+  .nav-links a:hover::after{
+    width: 100%;
+  }
+
+
+  .dashboard{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px auto;
+
+  }
+  .db2{
+    background: url(./images/persnol.jpg);
+    background-size: cover;
+    background-position: center 0px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+  }
+  
+  .db1 h1{
+    width: 300px;
+  }
+  .db1 span{
+    color: crimson;
+    display: block;
+  }
+  .db1>div{
+    background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
+    width: 200px;
+    height: 50px;
+    padding: 1px;
+    margin: 20px auto;
+    border-radius: 30px;
+  }
+  .db1 button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    /* padding: 15px 35px; */
+    border-radius: 30px;
+    border: none;
+    transition: 0.3s;
+    animation: btnanime 0.5s linear;
+  }
+
+  .db1 button:hover{
+    background:white;
+    color: rgb(30,22,222);
+    letter-spacing: 2px;
+  }
+
+  .skills{
+    margin: 70px auto;
+    /* padding: 10px 100px; */
+  }
+  .skills h1{
+    margin: 40px 0px;
+    position: sticky;
+    top: 70px;
+  }
+  .skill-cont{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .sider{
+    width: 40%;
+    height: 60vh;
+    background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW5tNjFtZjl4YXczdTVrNjlpem53NHRleGQyM3dlMzMyZ2NtOTdtNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4H5jdBI1AEvS2xlra6/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: sticky;
+    top: 125px;
+  }
+  .cards{
+    width: 58%;
+    position: relative;
+    scroll-snap-type:y mandatory;
+  }
+  .cards div{
+    color: rgb(52, 52, 52);
+    background: linear-gradient(13deg,lightblue,rgb(151, 255, 151));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 40vh;
+    margin: 30px auto;
+    /* border-top: solid rgb(0, 243, 194) 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+    position: sticky;
+    top: 200px;
+    scroll-snap-align: top;
+  }
+  .cards div:hover{
+    /* transform: scale(1.01); */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
+  }
+
+  .cards div img{
+    width: 130px;
+    margin: 20px 30px;
+    transition: 0.3s;
+  }
+  .cards div p{
+    width: 500px;
+    font-size: 15px;
+  }
+
+  /* ------------CONTACT PAGE----------- */
+
+  .contact-form{
+    width: 85%;
+    height: 89vh;
+    background: url("https://wallpapercave.com/wp/wp4923991.png");
+    background-size: cover;
+    background-position: 100px;
+    padding: 20px;
+    margin: auto;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+  }
+  .contact-form h1{
+    text-align: left;
+    padding-left: 70px;
+    margin: 20px 0px;
+    color: white;
+  }
+  .contact-form form{
+    width:60%;
+    margin: 20px 0px;
+  }
+  .contact-form form input{
+    width: 70%;
+    height: 40px;
+    margin: 10px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  .contact-form form input:focus{
+    border: none;
+    outline: none;
+    transform: scale(1.1);
+  }
+  .contact-form form input:hover{
+    transform: scale(1.1);
+    letter-spacing: 1px;
+  }
+  .contact-form form input[type="submit"]{
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .contact-form form input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background-color: white;
+    color: black;
+  }
+
+  /* ------------------------about------------------ */
+  .about{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+  }
+  .about div:first-child{
+    width: 49%;
+  }
+  .about div:first-child img{
+    width: 100%;
+    object-fit: scale-down;
+  }
+  .about div:last-child{
+    width: 49%;
+  }
+  .about div:last-child img{
+    width: 100%;
+    object-fit: scale-down;
+  }
+
+  .about h1{
+    font-size: 30px;
+    margin: 20px auto;
+  }
+  .about h1 span{
+    color: rgb(0, 243, 194);
+    font-size: 50px;
+    font-family: 'Tourney', cursive;
+  }
+  .about p{
+    font-style: 17px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .about p span{
+    color: rgb(0, 243, 194);
+    font-weight: 700;
+  }
+
+
+
+
+  /* -------------------------contact------------------- */
+  .home-contact{
+    background: linear-gradient(130deg,#94ffa1,#cfdcdc);
+    width: 100%;
+    height: 600px;
+    margin: 70px auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .home-contact form{
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .home-contact form input{
+    display: block;
+    width: 270px;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+  }
+  .home-contact form input::placeholder{
+    font-size: 15px;
+  }
+  .home-contact form input[type="checkbox"]{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 20px;
+    accent-color: #94ffa1;
+  }
+  .home-contact label{
+    color: #94ffa1;
+    margin: 10px;
+  }
+  .home-contact h1{
+    font-size: 70px;
+    font-family: 'Bakbak One', cursive;  
+  }
+  .home-contact form button{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #94ffa1;
+    padding: 7px 27px;
+    outline: #94ffa1 solid 1px;
+    outline-offset: 3px;
+    border-radius: 5px;
+    margin: 30px auto 10px auto;
+    transition: 0.5s;
+  }
+  .home-contact form button:hover{
+    transform: scale(1.1);
+  }
+
+  /* -------------------------projects-------------- */
+  .projects{
+    width: 100%;
+    height: 500px;
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .projects h1{
+    position: absolute;
+    width: 90%;
+    color: white;
+    font-size: 700%;
+    letter-spacing: 20px;
+  }
+  .projects div{
+    background-color: rgba(173, 173, 173, 0.444);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 20%;
+    height: 260px;
+    padding: 20px;
+    border-radius: 10px;
+    outline: #ffffff solid 3px;
+    outline-offset: 10px;
+
+    font-size: 20px;
+    color: white;
+
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .projects div:hover img{
+    transform: scale(1.1);
+  }
+
+  .projects div img{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    object-fit: scale-down;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+
+
+
+  
 }
 
-.cards div img{
-  width: 170px;
-  margin: 20px 50px;
-  transition: 0.3s;
-}
-.cards div p{
-  width: 500px;
-  font-size: 25px;
+
+
+
+
+
+/* small tablet */
+@media (min-width:481px) and (max-width:767px) 
+{
+  nav{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3%;
+    margin: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+  .logo a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .logo h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+  }
+  
+  .nav-links a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+  }
+  .nav-links a::after{
+    content: '';
+    background-color: white;
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 4px auto;
+    border-radius: 30px;
+    transition: 0.3s;
+    transform-origin: left;
+  }
+  .nav-links a:hover::after{
+    width: 100%;
+  }
+
+
+  .dashboard{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px auto;
+
+  }
+  .db2{
+    background: url(./images/persnol.jpg);
+    background-size: cover;
+    background-position: center 0px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+  }
+  
+  .db1 h1{
+    width: 300px;
+  }
+  .db1 span{
+    color: crimson;
+    display: block;
+  }
+  .db1>div{
+    background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
+    width: 200px;
+    height: 50px;
+    padding: 1px;
+    margin: 20px auto;
+    border-radius: 30px;
+  }
+  .db1 button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+    /* padding: 15px 35px; */
+    border-radius: 30px;
+    border: none;
+    transition: 0.3s;
+    animation: btnanime 0.5s linear;
+  }
+
+  .db1 button:hover{
+    background:white;
+    color: rgb(30,22,222);
+    letter-spacing: 2px;
+  }
+
+  .skills{
+    margin: 70px auto;
+    /* padding: 10px 100px; */
+  }
+  .skills h1{
+    margin: 40px 0px;
+    position: sticky;
+    top: 70px;
+  }
+  .skill-cont{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .sider{
+    width: 50%;
+    height: 70vh;
+    background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW5tNjFtZjl4YXczdTVrNjlpem53NHRleGQyM3dlMzMyZ2NtOTdtNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4H5jdBI1AEvS2xlra6/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: sticky;
+    top: 125px;
+  }
+  .cards{
+    width: 50%;
+    position: relative;
+    scroll-snap-type:y mandatory;
+  }
+  .cards div{
+    color: rgb(52, 52, 52);
+    background: linear-gradient(13deg,lightblue,rgb(151, 255, 151));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 40vh;
+    margin: 30px auto;
+    /* border-top: solid rgb(0, 243, 194) 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+    position: sticky;
+    top: 200px;
+    scroll-snap-align: top;
+  }
+  .cards div:hover{
+    /* transform: scale(1.01); */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
+  }
+
+  .cards div img{
+    width: 170px;
+    margin: 20px 50px;
+    transition: 0.3s;
+  }
+  .cards div p{
+    width: 500px;
+    font-size: 20px;
+  }
+
+  /* ------------CONTACT PAGE----------- */
+
+  .contact-form{
+    width: 85%;
+    height: 89vh;
+    background: url("https://wallpapercave.com/wp/wp4923991.png");
+    background-size: cover;
+    background-position: 100px;
+    padding: 20px;
+    margin: auto;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+  }
+  .contact-form h1{
+    text-align: left;
+    padding-left: 70px;
+    margin: 20px 0px;
+    color: white;
+  }
+  .contact-form form{
+    width:60%;
+    margin: 20px 0px;
+  }
+  .contact-form form input{
+    width: 70%;
+    height: 40px;
+    margin: 10px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  .contact-form form input:focus{
+    border: none;
+    outline: none;
+    transform: scale(1.1);
+  }
+  .contact-form form input:hover{
+    transform: scale(1.1);
+    letter-spacing: 1px;
+  }
+  .contact-form form input[type="submit"]{
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .contact-form form input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background-color: white;
+    color: black;
+  }
+
+  .about{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+  }
+  .about div:first-child{
+    width: 49%;
+  }
+  .about div:last-child{
+    width: 49%;
+  }
+  .about h1{
+    font-size: 40px;
+    margin: 20px auto;
+  }
+  .about h1 span{
+    color: rgb(0, 243, 194);
+    font-size: 60px;
+    font-family: 'Tourney', cursive;
+  }
+  .about p{
+    font-style: 18px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .about p span{
+    color: rgb(0, 243, 194);
+    font-weight: 700;
+  }
+  .home-contact{
+    background: linear-gradient(130deg,#94ffa1,#cfdcdc);
+    width: 100%;
+    height: 600px;
+    margin: 70px auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .home-contact form{
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .home-contact form input{
+    display: block;
+    width: 300px;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+  }
+  .home-contact form input::placeholder{
+    font-size: 17px;
+  }
+  .home-contact form input[type="checkbox"]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 20px;
+    accent-color: #94ffa1;
+  }
+  .home-contact label{
+    color: #94ffa1;
+    margin: 10px;
+  }
+  .home-contact h1{
+    font-size: 90px;
+    font-family: 'Bakbak One', cursive;  
+  }
+  .home-contact form button{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #94ffa1;
+    padding: 10px 30px;
+    outline: #94ffa1 solid 1px;
+    outline-offset: 3px;
+    border-radius: 5px;
+    margin: 30px auto 10px auto;
+    transition: 0.5s;
+  }
+  .home-contact form button:hover{
+    transform: scale(1.1);
+  }
+  .projects{
+    width: 100%;
+    height: 500px;
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .projects h1{
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 700%;
+    letter-spacing: 20px;
+  }
+  .projects div{
+    background-color: rgba(173, 173, 173, 0.444);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    outline: #ffffff solid 3px;
+    outline-offset: 10px;
+
+    font-size: 22px;
+    color: white;
+
+    transition: 0.4s;
+  }
+
+  .projects div:hover img{
+    transform: scale(1.1);
+  }
+
+  .projects div img{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    object-fit: scale-down;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+
+
+
+  
 }
 
-/* ------------CONTACT PAGE----------- */
 
-.contact-form{
-  width: 85%;
-  height: 89vh;
-  background: url("https://wallpapercave.com/wp/wp4923991.png");
-  background-size: cover;
-  background-position: 100px;
-  padding: 20px;
-  margin: auto;
-  border: solid 1px black;
-  display: flex;
-  align-items: center;
-}
-.contact-form h1{
-  text-align: left;
-  padding-left: 70px;
-  margin: 20px 0px;
-  color: white;
-}
-.contact-form form{
-  width:60%;
-  margin: 20px 0px;
-}
-.contact-form form input{
-  width: 70%;
-  height: 40px;
-  margin: 10px;
-  padding: 4px 10px;
-  border: none;
-  border-radius: 5px;
-  transition: 0.3s;
-  font-size: 16px;
-}
-.contact-form form input:focus{
-  border: none;
-  outline: none;
-  transform: scale(1.1);
-}
-.contact-form form input:hover{
-  transform: scale(1.1);
-  letter-spacing: 1px;
-}
-.contact-form form input[type="submit"]{
-  width: 70%;
-  background-color: black;
-  color: white;
-  font-weight: 500;
-  font-size: 18px;
-}
-.contact-form form input[type="submit"]:hover{
-  letter-spacing: 1px;
-  background-color: white;
-  color: black;
-}
 
+
+
+
+
+/* mobile */
+@media (max-width:481px) 
+{
+  nav{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    margin: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+  .logo a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .logo h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+  }
+  .nav-links{
+    display: none;
+  }
+  .hamberger{
+    display: block;
+  }
+  .hamberger span i{
+    color: #94ffa1;
+    font-size: 30px;
+  }
+  .menu-links{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .menu-links a{
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0px;
+    transition: 0.2s;
+  }
+  .menu-links a:hover{
+    transform: scale(1.05);
+    color: #94ffa1;
+  }
+
+  .nav-links a::after{
+    content: '';
+    background-color: white;
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 4px auto;
+    border-radius: 30px;
+    transition: 0.3s;
+    transform-origin: left;
+  }
+  .nav-links a:hover::after{
+    width: 100%;
+  }
+
+
+  .dashboard{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    flex-direction: column-reverse;
+
+  }
+  .db2{
+    background: url(./images/persnol.jpg);
+    background-size: cover;
+    background-position: center 0px;
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    border-radius: 50%;
+  }
+  
+  .db1 h1{
+    width: 300px;
+  }
+  .db1 span{
+    color: crimson;
+    display: block;
+  }
+  .db1>div{
+    background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
+    width: 200px;
+    height: 50px;
+    padding: 1px;
+    margin: 20px auto;
+    border-radius: 30px;
+  }
+  .db1 button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+    /* padding: 15px 35px; */
+    border-radius: 30px;
+    border: none;
+    transition: 0.3s;
+    animation: btnanime 0.5s linear;
+  }
+
+  .db1 button:hover{
+    background:white;
+    color: rgb(30,22,222);
+    letter-spacing: 2px;
+  }
+
+  .skills{
+    margin: 50px auto;
+    /* padding: 10px 100px; */
+  }
+  .skills h1{
+    color: #ffffff;
+    margin: 40px 0px;
+    position: sticky;
+    top: 80px;
+  }
+  .skill-cont{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .sider{
+    display: none;
+    width: 50%;
+    height: 70vh;
+    background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW5tNjFtZjl4YXczdTVrNjlpem53NHRleGQyM3dlMzMyZ2NtOTdtNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4H5jdBI1AEvS2xlra6/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: sticky;
+    top: 125px;
+  }
+  .cards{
+    width: 90%;
+    position: relative;
+    scroll-snap-type:y mandatory;
+  }
+  .cards div{
+    color: rgb(52, 52, 52);
+    background: linear-gradient(13deg,lightblue,rgb(151, 255, 151));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    margin: 30px auto;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+    position: sticky;
+    top: 200px;
+    scroll-snap-align: top;
+  }
+  .cards div:hover{
+    /* transform: scale(1.01); */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
+  }
+
+  .cards div img{
+    width: 130px;
+    margin: 20px 20px;
+    transition: 0.3s;
+  }
+  .cards div p{
+    width: 400px;
+    font-size: 15px;
+  }
+
+  /* ------------CONTACT PAGE----------- */
+
+  .contact-form{
+    width: 85%;
+    height: 89vh;
+    background: url("https://wallpapercave.com/wp/wp4923991.png");
+    background-size: cover;
+    background-position: 100px;
+    padding: 20px;
+    margin: auto;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+  }
+  .contact-form h1{
+    text-align: left;
+    padding-left: 70px;
+    margin: 20px 0px;
+    color: white;
+  }
+  .contact-form form{
+    width:60%;
+    margin: 20px 0px;
+  }
+  .contact-form form input{
+    width: 70%;
+    height: 40px;
+    margin: 10px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  .contact-form form input:focus{
+    border: none;
+    outline: none;
+    transform: scale(1.1);
+  }
+  .contact-form form input:hover{
+    transform: scale(1.1);
+    letter-spacing: 1px;
+  }
+  .contact-form form input[type="submit"]{
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .contact-form form input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background-color: white;
+    color: black;
+  }
+
+  .about{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: auto;
+  }
+  .about div:first-child{
+    width: 90%;
+  }
+  .about div:last-child{
+    width: 90%;
+  }
+  .about div:first-child img{
+    width: 90%;
+    border-radius: 10px;
+  }
+  .about div:last-child img{
+    width: 90%;
+    border-radius: 10px;
+  }
+  .about h1{
+    font-size: 40px;
+    margin: 20px auto;
+  }
+  .about h1 span{
+    color: rgb(0, 243, 194);
+    font-size: 60px;
+    font-family: 'Tourney', cursive;
+  }
+  .about p{
+    font-style: 18px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .about p span{
+    color: rgb(0, 243, 194);
+    font-weight: 700;
+  }
+  .home-contact{
+    background: linear-gradient(130deg,#94ffa1,#cfdcdc);
+    width: 100%;
+    height: 600px;
+    margin: 70px auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .home-contact form{
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .home-contact form input{
+    display: block;
+    width: 300px;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+  }
+  .home-contact form input::placeholder{
+    font-size: 17px;
+  }
+  .home-contact form input[type="checkbox"]{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 20px;
+    accent-color: #94ffa1;
+  }
+  .home-contact label{
+    color: #94ffa1;
+    margin: 10px;
+  }
+  .home-contact h1{
+    font-size: 50px;
+    font-family: 'Bakbak One', cursive;  
+  }
+  .home-contact form button{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #94ffa1;
+    padding: 7px 24px;
+    outline: #94ffa1 solid 1px;
+    outline-offset: 3px;
+    border-radius: 5px;
+    margin: 30px auto 10px auto;
+    transition: 0.5s;
+  }
+  .home-contact form button:hover{
+    transform: scale(1.1);
+  }
+
+  /*-------------------- project------------------- */
+  .projects{
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .projects h1{
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 700%;
+    letter-spacing: 20px;
+  }
+  .projects div{
+    background-color: rgba(173, 173, 173, 0.444);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 180px;
+    height: 230px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    outline: #ffffff solid 3px;
+    outline-offset: 10px;
+    font-size: 22px;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .projects div:hover img{
+    transform: scale(1.1);
+  }
+
+  .projects div img{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    object-fit: scale-down;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+
+
+
+  
+}

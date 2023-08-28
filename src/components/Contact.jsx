@@ -2,7 +2,6 @@ import Navbar from "../Navbar";
 
 const Contact = () => {
     return (<div className="contact-page">
-        <Navbar/>
         <div className="contact-form">
             <div>
             <h1>Contact me </h1>
