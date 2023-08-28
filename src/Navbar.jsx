@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import cv from './assets/resume.pdf'
 
 const Navbar = () => {
     let[menu , setMenu] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
             <div className="nav-links">
                 <Link to="/contact">Contact me</Link>
                 <Link to="/">Know more</Link>
-                <Link to="">Download resume</Link>
+                <Link to={cv} download={true}>Download resume</Link>
                 <Link to="/">Projects</Link>
             </div>
 
@@ -22,9 +23,10 @@ const Navbar = () => {
                             :<i class='bx bx-menu-alt-left'></i>}
                 </span>
                 {menu && <div className="menu-links" data-aos="fade-left">
+                <Link to="/">Home</Link>
                 <Link to="/contact">Contact me</Link>
                 <Link to="/">Know more</Link>
-                <Link to="">Download resume</Link>
+                <Link to="/">Download resume</Link>
                 <Link to="/">Projects</Link>
                 </div>}
             </div>
