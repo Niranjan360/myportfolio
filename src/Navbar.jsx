@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="nav-links">
                 <Link to="/contact">Contact me</Link>
                 <Link to="/">Know more</Link>
-                <Link to={cv} download={true}>Download resume</Link>
+                <a href={cv} download={true}>Download resume</a>
                 <Link to="/">Projects</Link>
             </div>
 
@@ -26,7 +26,7 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
                 <Link to="/contact">Contact me</Link>
                 <Link to="/">Know more</Link>
-                <Link to="/">Download resume</Link>
+                <a href={cv} download={true}>Download resume</a>
                 <Link to="/">Projects</Link>
                 </div>}
             </div>

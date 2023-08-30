@@ -52,12 +52,14 @@ hr{
   }
   
   .nav-links a{
-    display: inline-block;
     font-size: 18px;
     font-weight: 300;
     color: white;
     text-decoration: none;
     margin: 0px 20px;
+
+    display: inline-flex;
+    align-items: center;
   }
   .nav-links a::after{
     content: '';
@@ -166,7 +168,7 @@ hr{
     width: 90%;
     height: 40vh;
     margin: 30px auto;
-    /* border-top: solid rgb(0, 243, 194) 2px; */
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,8 +256,12 @@ hr{
     width: 90%;
     margin: auto;
   }
+  .about img{
+    border-radius: 8px;
+  }
   .about div:first-child{
     width: 49%;
+    border-radius: 8px;
   }
   .about div:last-child{
     width: 49%;
@@ -392,11 +398,6 @@ hr{
 }
 
 
-
-
-
-
-
 /* tablet */
 @media (min-width:768px) and (max-width:1199px) 
 {
@@ -421,12 +422,14 @@ hr{
   }
   
   .nav-links a{
-    display: inline-block;
     font-size: 15px;
     font-weight: 300;
     color: white;
     text-decoration: none;
     margin: 0px 20px;
+
+    display: inline-flex;
+    align-items: center;
   }
   .nav-links a::after{
     content: '';
@@ -783,9 +786,6 @@ hr{
 
 
 
-
-
-
 /* small tablet */
 @media (min-width:481px) and (max-width:767px) 
 {
@@ -806,17 +806,16 @@ hr{
     text-decoration: none;
   }
   .logo h1{
-    font-family: 'EB Garamond', serif;
-    font-size: 30px;
+    font-size: 25px;
   }
-  
   .nav-links a{
-    display: inline-block;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 300;
     color: white;
     text-decoration: none;
-    margin: 0px 20px;
+    margin: 0px 8px;
+    display: inline-flex;
+    align-items: center;
   }
   .nav-links a::after{
     content: '';
@@ -837,6 +836,7 @@ hr{
   .dashboard{
     color: white;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-evenly;
     margin: 10px auto;
@@ -846,13 +846,15 @@ hr{
     background: url(./images/persnol.jpg);
     background-size: cover;
     background-position: center 0px;
-    width: 450px;
-    height: 450px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
   }
   
   .db1 h1{
     width: 300px;
+    font-size: 25px;
+    margin: 15px auto;
   }
   .db1 span{
     color: crimson;
@@ -860,7 +862,7 @@ hr{
   }
   .db1>div{
     background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
-    width: 200px;
+    width: 170px;
     height: 50px;
     padding: 1px;
     margin: 20px auto;
@@ -871,7 +873,7 @@ hr{
     width: 100%;
     height: 100%;
     background: linear-gradient(45deg , rgb(91,254,249),rgb(30,22,222));
-    font-size: 21px;
+    font-size: 17px;
     font-weight: 500;
     color: white;
     /* padding: 15px 35px; */
@@ -903,8 +905,8 @@ hr{
     justify-content: center;
   }
   .sider{
-    width: 50%;
-    height: 70vh;
+    width: 30%;
+    height: 60vh;
     background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW5tNjFtZjl4YXczdTVrNjlpem53NHRleGQyM3dlMzMyZ2NtOTdtNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4H5jdBI1AEvS2xlra6/giphy.gif);
     background-repeat: no-repeat;
     background-size: contain;
@@ -913,7 +915,7 @@ hr{
     top: 125px;
   }
   .cards{
-    width: 50%;
+    width: 68%;
     position: relative;
     scroll-snap-type:y mandatory;
   }
@@ -923,7 +925,7 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
     width: 90%;
-    height: 40vh;
+    height: 30vh;
     margin: 30px auto;
     /* border-top: solid rgb(0, 243, 194) 2px; */
     display: flex;
@@ -941,13 +943,13 @@ hr{
   }
 
   .cards div img{
-    width: 170px;
-    margin: 20px 50px;
+    width: 130px;
+    margin: 20px 30px;
     transition: 0.3s;
   }
   .cards div p{
-    width: 500px;
-    font-size: 20px;
+    width: 550px;
+    font-size: 12px;
   }
 
   /* ------------CONTACT PAGE----------- */
@@ -1006,6 +1008,7 @@ hr{
     color: black;
   }
 
+  /* ------------------------about------------------ */
   .about{
     color: white;
     display: flex;
@@ -1016,20 +1019,31 @@ hr{
   .about div:first-child{
     width: 49%;
   }
+  .about div:first-child img{
+    width: 100%;
+    object-fit: scale-down;
+    border-radius: 7px;
+  }
   .about div:last-child{
     width: 49%;
   }
+  .about div:last-child img{
+    width: 100%;
+    object-fit: scale-down;
+    border-radius: 7px;
+  }
+
   .about h1{
-    font-size: 40px;
+    font-size: 26px;
     margin: 20px auto;
   }
   .about h1 span{
     color: rgb(0, 243, 194);
-    font-size: 60px;
+    font-size: 45px;
     font-family: 'Tourney', cursive;
   }
   .about p{
-    font-style: 18px;
+    font-style: 12px;
     letter-spacing: 2px;
     word-spacing: 5px;
     line-height: 23px;
@@ -1039,6 +1053,11 @@ hr{
     color: rgb(0, 243, 194);
     font-weight: 700;
   }
+
+
+
+
+  /* -------------------------contact------------------- */
   .home-contact{
     background: linear-gradient(130deg,#94ffa1,#cfdcdc);
     width: 100%;
@@ -1048,27 +1067,28 @@ hr{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap-reverse;
   }
   .home-contact form{
     background-color: black;
-    padding: 30px;
+    padding: 26px;
     border-radius: 10px;
   }
   .home-contact form input{
     display: block;
-    width: 300px;
+    width: 240px;
     padding: 15px;
     margin: 10px 0px;
     border: none;
     border-radius: 5px;
   }
   .home-contact form input::placeholder{
-    font-size: 17px;
+    font-size: 15px;
   }
   .home-contact form input[type="checkbox"]{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     padding: 0px;
     margin: 0px;
     border-radius: 20px;
@@ -1079,7 +1099,7 @@ hr{
     margin: 10px;
   }
   .home-contact h1{
-    font-size: 90px;
+    font-size: 50px;
     font-family: 'Bakbak One', cursive;  
   }
   .home-contact form button{
@@ -1087,7 +1107,7 @@ hr{
     font-size: 20px;
     font-weight: 600;
     background-color: #94ffa1;
-    padding: 10px 30px;
+    padding: 7px 27px;
     outline: #94ffa1 solid 1px;
     outline-offset: 3px;
     border-radius: 5px;
@@ -1097,6 +1117,8 @@ hr{
   .home-contact form button:hover{
     transform: scale(1.1);
   }
+
+  /* -------------------------projects-------------- */
   .projects{
     width: 100%;
     height: 500px;
@@ -1106,29 +1128,36 @@ hr{
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    flex-wrap: wrap;
+    row-gap: 20px;
   }
   .projects h1{
     position: absolute;
-    width: 100%;
+    width: 90%;
     color: white;
-    font-size: 700%;
+    font-size: 300%;
     letter-spacing: 20px;
   }
   .projects div{
     background-color: rgba(173, 173, 173, 0.444);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(5px);
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 210px;
+    margin: 10px 25px;
     padding: 20px;
     border-radius: 10px;
     outline: #ffffff solid 3px;
     outline-offset: 10px;
 
-    font-size: 22px;
+    font-size: 20px;
     color: white;
 
     transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .projects div:hover img{
@@ -1144,15 +1173,8 @@ hr{
     transition: 0.3s;
   }
 
-
-
-
   
 }
-
-
-
-
 
 
 
