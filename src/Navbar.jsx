@@ -26,11 +26,10 @@ const Navbar = () => {
                             :<i class='bx bx-menu-alt-left'></i>}
                 </span>
                 {menu && <div className="menu-links" data-aos="fade-left">
-                <Link to="/">Home</Link>
-                <Link to="/contact">Contact me</Link>
-                <Link to="/">Know more</Link>
+                <Link to="contact-me" smooth={true} offset={-40}>Contact me</Link>
+                <Link to="more" smooth={true} offset={-80}>Know more</Link>
                 <a href={cv} download={true}>Download resume</a>
-                <Link to="/">Projects</Link>
+                <Link to="projects" smooth={true}>Projects</Link>
                 </div>}
             </div>
         </nav>
