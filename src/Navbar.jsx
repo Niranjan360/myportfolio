@@ -1,6 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import cv from './assets/resume.pdf'
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 const Navbar = () => {
     let[menu , setMenu] = useState(false);
@@ -11,10 +14,10 @@ const Navbar = () => {
             </div>
 
             <div className="nav-links">
-                <Link to="/contact">Contact me</Link>
-                <Link to="/">Know more</Link>
+                <Link to="contact-me" smooth={true} offset={-40}>Contact me</Link>
+                <Link to="more" smooth={true} offset={-80}>Know more</Link>
                 <a href={cv} download={true}>Download resume</a>
-                <Link to="/">Projects</Link>
+                <Link to="projects" smooth={true}>Projects</Link>
             </div>
 
             <div className="hamberger">

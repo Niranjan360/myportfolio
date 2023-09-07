@@ -42,6 +42,7 @@ hr{
     position: sticky;
     top: 0px;
     z-index: 100;
+    backdrop-filter: blur(10px);
   }
   .logo a{
     color: rgb(255, 255, 255);
@@ -50,20 +51,21 @@ hr{
   .logo h1{
     font-size: 30px;
   }
-  
+  .nav-links{
+    display: flex;
+  }
   .nav-links a{
     font-size: 18px;
     font-weight: 300;
     color: white;
     text-decoration: none;
     margin: 0px 20px;
-
-    display: inline-flex;
+    /* display: inline-flex; */
     align-items: center;
   }
   .nav-links a::after{
     content: '';
-    background-color: white;
+    background-color: #94ffa1;
     display: block;
     width: 0%;
     height: 2px;
@@ -74,6 +76,10 @@ hr{
   }
   .nav-links a:hover::after{
     width: 100%;
+  }
+  .nav-links a:hover{
+    cursor: pointer;
+    color: #94ffa1;
   }
 
 
@@ -146,7 +152,7 @@ hr{
     justify-content: center;
   }
   .sider{
-    width: 50%;
+    width: 40%;
     height: 70vh;
     background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW5tNjFtZjl4YXczdTVrNjlpem53NHRleGQyM3dlMzMyZ2NtOTdtNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4H5jdBI1AEvS2xlra6/giphy.gif);
     background-repeat: no-repeat;
@@ -156,26 +162,26 @@ hr{
     top: 125px;
   }
   .cards{
-    width: 50%;
+    width: 60%;
     position: relative;
-    scroll-snap-type:y mandatory;
   }
   .cards div{
     color: rgb(52, 52, 52);
-    background: linear-gradient(13deg,lightblue,rgb(151, 255, 151));
+    background: linear-gradient(13deg,white,rgb(151, 255, 151));
+    /* background-color: white; */
     background-repeat: no-repeat;
     background-size: cover;
-    width: 90%;
-    height: 40vh;
-    margin: 30px auto;
-    border-radius: 8px;
+    width: 100%;
+    height: 350px;
+    margin:  0px auto 50px 0px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 40px;
     transition: 0.5s;
     position: sticky;
-    top: 200px;
+    top: 140px;
     scroll-snap-align: top;
   }
   .cards div:hover{
@@ -190,7 +196,8 @@ hr{
   }
   .cards div p{
     width: 500px;
-    font-size: 20px;
+    font-size: 17px;
+    text-align: left;
   }
 
   /* ------------CONTACT PAGE----------- */
@@ -258,6 +265,7 @@ hr{
   }
   .about img{
     border-radius: 8px;
+    width: 400px;
   }
   .about div:first-child{
     width: 49%;
@@ -286,6 +294,8 @@ hr{
     color: rgb(0, 243, 194);
     font-weight: 700;
   }
+
+
   .home-contact{
     background: linear-gradient(130deg,#94ffa1,#cfdcdc);
     width: 100%;
@@ -345,6 +355,7 @@ hr{
     transform: scale(1.1);
   }
   .projects{
+
     width: 100%;
     height: 500px;
     margin: 40px auto;
@@ -354,27 +365,20 @@ hr{
     align-items: center;
     position: relative;
   }
-  .projects h1{
-    position: absolute;
-    width: 100%;
-    color: white;
-    font-size: 700%;
-    letter-spacing: 20px;
-  }
+
   .projects div{
-    background-color: rgba(173, 173, 173, 0.444);
-    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.444);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    width: 250px;
+    width: 230px;
     height: 300px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 2px;
     outline: #ffffff solid 3px;
-    outline-offset: 10px;
+    outline-offset: 5px;
 
     font-size: 22px;
     color: white;
-
     transition: 0.4s;
   }
 
@@ -383,19 +387,42 @@ hr{
   }
 
   .projects div img{
-    width: 90%;
+    width: 80%;
     height: auto;
-    margin: 20px auto;
+    margin: 30px auto;
     object-fit: scale-down;
     border-radius: 50%;
     transition: 0.3s;
   }
 
+  .projects video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
 
 
-
-  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* tablet */
@@ -778,11 +805,37 @@ hr{
     transition: 0.3s;
   }
 
+  .projects video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
 
 
 
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -949,7 +1002,7 @@ hr{
   }
   .cards div p{
     width: 550px;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   /* ------------CONTACT PAGE----------- */
@@ -1173,8 +1226,33 @@ hr{
     transition: 0.3s;
   }
 
+  .projects video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1369,7 +1447,7 @@ hr{
   }
   .cards div p{
     width: 600px;
-    font-size: 13px;
+    font-size: 11px;
     margin: 10px 0px;
   }
 
@@ -1581,4 +1659,15 @@ hr{
     border-radius: 50%;
     transition: 0.3s;
   } 
+
+  .projects video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
 }
