@@ -1,4 +1,4 @@
-import Navbar from "../Navbar";
+import Navbar from "./Navbar";
 
 const Contact = () => {
     return (<div className="contact-page">

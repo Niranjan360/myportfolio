@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './Home';
+import Home from './components/Home';
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
 import Contact from './components/Contact';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 
 function App() {
 

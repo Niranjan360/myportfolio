@@ -419,12 +419,6 @@ hr{
 
 
 
-
-
-
-
-
-
 /* tablet */
 @media (min-width:768px) and (max-width:1199px) 
 {
@@ -540,7 +534,7 @@ hr{
     margin: auto;
     width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .sider{
     width: 40%;
@@ -562,32 +556,26 @@ hr{
     background: linear-gradient(13deg,lightblue,rgb(151, 255, 151));
     background-repeat: no-repeat;
     background-size: cover;
-    width: 90%;
-    height: 40vh;
+    width: 100%;
+    height: 300px;
     margin: 30px auto;
-    /* border-top: solid rgb(0, 243, 194) 2px; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     transition: 0.5s;
     position: sticky;
-    top: 200px;
-    scroll-snap-align: top;
+    top: 150px;
   }
-  .cards div:hover{
-    /* transform: scale(1.01); */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
-  }
-
   .cards div img{
-    width: 130px;
+    width: 30%;
     margin: 20px 30px;
     transition: 0.3s;
+    object-fit: scale-down;
   }
   .cards div p{
-    width: 500px;
-    font-size: 15px;
+    width: 70%;
+    font-size: 14px;
   }
 
   /* ------------CONTACT PAGE----------- */
@@ -955,7 +943,7 @@ hr{
     margin: auto;
     width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .sider{
     width: 30%;
@@ -978,7 +966,7 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
     width: 90%;
-    height: 30vh;
+    height: 250px;
     margin: 30px auto;
     /* border-top: solid rgb(0, 243, 194) 2px; */
     display: flex;
@@ -1293,6 +1281,8 @@ hr{
     top: 80px;
     right: 20px;
     background-color: rgba(0, 0, 0, 0.486);
+    width: 90%;
+    height: 400px;
     padding: 5px;
     border-radius: 5px;
     backdrop-filter: blur(15px);
@@ -1423,13 +1413,13 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 30vh;
+    height: 31vh;
     margin: 30px auto;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     transition: 0.5s;
     position: sticky;
     top: 200px;
@@ -1441,14 +1431,17 @@ hr{
   }
 
   .cards div img{
-    width: 110px;
+    float: left;
+    width: 40%;
     margin: 20px 20px;
     transition: 0.3s;
+    object-fit: scale-down;
   }
   .cards div p{
-    width: 600px;
+    width: 60%;
     font-size: 11px;
     margin: 10px 0px;
+    text-align: left;
   }
 
   /* ------------CONTACT PAGE----------- */
@@ -1640,8 +1633,8 @@ hr{
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    outline: #ffffff solid 3px;
-    outline-offset: 10px;
+    /* outline: #ffffff solid 3px; */
+    /* outline-offset: 10px; */
     font-size: 22px;
     color: white;
     transition: 0.4s;

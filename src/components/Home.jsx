@@ -1,19 +1,19 @@
 import Navbar from "./Navbar";
-import html from './images/html.png'
-import css from './images/css.png'
-import js from './images/js.png'
-import react from './images/react.png'
-import node from './images/node.png'
-import expressjs from './images/expressjs.webp'
-import bootstrap from './images/bootstrap.png'
-import tech from './assets/tech.mp4'
+import html from '../images/html.png'
+import css from '../images/css.png'
+import js from '../images/js.png'
+import react from '../images/react.png'
+import node from '../images/node.png'
+import expressjs from '../images/expressjs.webp'
+import bootstrap from '../images/bootstrap.png'
+import tech from '../assets/tech.mp4'
 
 
-import portfolio from './images/portfolio.webp'
-import org from './images/org.png'
-import ext from './images/ext.png'
-import persnal from './images/persnolapp.png'
-import Contact from "./components/Contact";
+import portfolio from '../images/portfolio.webp'
+import org from '../images/org.png'
+import ext from '../images/ext.png'
+import persnal from '../images/persnolapp.png'
+import Contact from "./Contact.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
