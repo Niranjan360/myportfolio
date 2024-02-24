@@ -84,6 +84,7 @@ hr{
 
 
   .dashboard{
+    height: 100vh;
     color: white;
     display: flex;
     align-items: center;
@@ -1803,7 +1804,7 @@ hr{
     justify-content: space-evenly;
     margin: 10px auto;
     flex-direction: column-reverse;
-
+    height: 100vh;
   }
   .db2{
     background: url(./images/persnol.jpg);

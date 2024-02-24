@@ -229,9 +229,6 @@ const Home = () => {
                         <img src={persnal} alt="portfolio" />
                     </div>
                 </div>
-
-                
-
     </div>);
 }
 export default Home;
