@@ -130,9 +130,9 @@ const Home = () => {
                 <div className="about" name="more">
                     <div>
                         <h1 data-aos="fade-left">About my <span>WORK</span></h1>
-                        <p data-aos="fade-right">I am a front end web developer and a passionate teacher , i have been 
+                        <p data-aos="fade-right">I am a front end web developer and a passionate trainer , i have been 
                             in 2 internal projects of an organization and i have trained more than <span>4000+</span> 
-                            engineering graduates on <span>HTML</span> , <span>CSS</span> and <span>JS</span> and <span>2000+</span> students on <span>Recat JS</span>
+                            engineering graduates on <span>HTML</span> , <span>CSS</span> and <span>JS</span> and <span>2000+</span> students on <span>React JS</span>
                         </p>
                         <img  data-aos="fade-up-left" src="https://cdn.dribbble.com/users/2403158/screenshots/5841419/how_to_get_support_2.gif" alt="" />
                     </div>
