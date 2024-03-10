@@ -103,7 +103,7 @@ const Home = () => {
                             </div>
                             <div>
                                 <img src={js} alt="javascript" />
-                                <p></p>
+                                <p>Proficient in JavaScript, I leverage its capabilities to develop dynamic and interactive web applications. Expert in utilizing frameworks and libraries for seamless functionality across various browsers.</p>
                             </div>
                             <div>
                                 <p>Skilled in React.js for dynamic, interactive web apps with Redux for state management, API integration, and optimizing performance. Proficient in component-based UI development and React Hooks usage.</p>
