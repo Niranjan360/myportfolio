@@ -90,20 +90,20 @@ const Home = () => {
                         </div>
                         <div className="cards" data-aos="fade-left">
                             <div>
-                                <p>Proficient in Core Java, with a strong foundation in object-oriented programming, data structures, and algorithm design, enabling the development of robust and efficient software applications. Skilled in debugging, optimizing code performance, and ensuring code quality through unit testing and best coding practices.</p>
+                                <p>Skilled in Core Java, object-oriented programming, data structures, and algorithm design. Proficient in debugging, optimizing code performance, and ensuring quality through unit testing and coding best practices.</p>
                                 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="java" />
                             </div>
                             <div>
                                 <img src={html} alt="java" />
-                                <p>Proficient in writing clean, semantic HTML code to create and structure web content. Experienced in using HTML5 standards to ensure cross-browser compatibility and mobile responsiveness. Skilled in incorporating multimedia elements, forms, and semantic tags for improved accessibility and SEO. Capable of working with CSS and JavaScript to enhance web page interactivity and design.</p>
+                                <p>Skilled in crafting clean, semantic HTML5 for cross-browser compatibility. Proficient in multimedia, forms, and SEO-friendly semantic tags. Capable with CSS and JavaScript for enhanced interactivity and design.</p>
                             </div>
                             <div>
-                                <p>Proficient in CSS (Cascading Style Sheets) with a strong command of CSS3, adept at crafting visually engaging and responsive web designs. Experienced in implementing complex layouts, animations, and transitions, ensuring cross-browser compatibility and pixel-perfect precision. Skilled in CSS frameworks like Bootstrap and CSS preprocessors like Sass for streamlined development and efficient styling.</p>
+                                <p>CSS expert with mastery in CSS3, excelling in visually appealing and responsive designs. Proficient in Bootstrap, Sass, and adept at intricate layouts, animations, and cross-browser compatibility for precision.</p>
                                 <img src={css} alt="css" />
                             </div>
                             <div>
                                 <img src={js} alt="javascript" />
-                                <p>Proficient in modern JavaScript development, employing ES6+ features and best practices to create interactive web applications. Skilled in building and optimizing user interfaces (UI) with the Document Object Model (DOM) and responsive design principles. Capable of using JavaScript libraries and frameworks like React to develop dynamic and efficient front-end solutions.</p>
+                                <p></p>
                             </div>
                             <div>
                                 <p>Proficient in building dynamic and interactive web applications using React.js, a leading JavaScript library, to create reusable and component-based user interfaces. Skilled in state management using Redux and managing data flow in complex applications, ensuring optimal performance and maintainability. Experienced in integrating RESTful APIs, optimizing rendering performance, and utilizing React Hooks for functional component development.</p>
