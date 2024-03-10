@@ -106,19 +106,19 @@ const Home = () => {
                                 <p></p>
                             </div>
                             <div>
-                                <p>Proficient in building dynamic and interactive web applications using React.js, a leading JavaScript library, to create reusable and component-based user interfaces. Skilled in state management using Redux and managing data flow in complex applications, ensuring optimal performance and maintainability. Experienced in integrating RESTful APIs, optimizing rendering performance, and utilizing React Hooks for functional component development.</p>
+                                <p>Skilled in React.js for dynamic, interactive web apps with Redux for state management, API integration, and optimizing performance. Proficient in component-based UI development and React Hooks usage.</p>
                                 <img src={react} alt="react" />
                             </div>
                             <div>
                                 <img src={node} alt="node" />
-                                <p>Proficient in Node.js for server-side JavaScript development, using Express.js to build robust web applications and RESTful APIs. Skilled in integrating various databases, both SQL and NoSQL, and implementing authentication and security measures to protect against common web vulnerabilities. Experienced in optimizing server performance and deploying applications on cloud platforms, ensuring efficient and scalable solutions.</p>
+                                <p>Node.js expert with Express.js for web apps/RESTful APIs. Proficient in SQL/NoSQL databases, security implementation, performance optimization, and cloud deployment for efficient, scalable solutions.</p>
                             </div>
                             <div>
-                                <p>Proficient in developing scalable server-side applications using Express.js, a lightweight Node.js framework, with expertise in RESTful API design, middleware implementation, and routing. Capable of integrating various databases, including SQL and NoSQL, to efficiently handle data storage and retrieval, while also ensuring secure user authentication and authorization mechanisms.</p>
+                                <p>Skilled in building scalable server-side apps with Express.js on Node.js, specializing in RESTful API design, middleware, routing, and adept at integrating SQL/NoSQL databases for secure authentication.</p>
                                 <img src={expressjs} alt="express" />
                             </div>
                             <div>
-                                <p>Proficient in Bootstrap, I leverage its robust framework to design responsive and visually polished web interfaces. I adeptly utilize Bootstrap's pre-built components and customize themes, ensuring a cohesive and branded look while maintaining cross-browser compatibility.</p>
+                                <p>Skilled in Bootstrap, I craft sleek, responsive web interfaces using its robust framework. I adeptly customize themes, ensuring a cohesive, branded look with cross-browser compatibility.</p>
                                 <img src={bootstrap} alt="bootstrap" />
                             </div>
                         </div>
