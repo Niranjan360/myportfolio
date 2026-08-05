@@ -11,6 +11,7 @@
   font-family: 'Maven Pro', sans-serif;
 }
 body{
+  font-family: 'Maven Pro', sans-serif;
   background-color: black;
   width: 100vw;
 }
@@ -93,7 +94,7 @@ hr{
 
   }
   .db2{
-    background: url(./images/persnol.jpg);
+    background: url(./images/profilepicture.jpeg);
     background-size: cover;
     background-position: center 0px;
     width: 450px;
@@ -291,7 +292,7 @@ hr{
     top: 140px;
   }
   .cards{
-    width: 60%;
+    width: 100%;
     position: relative;
   }
   .cards div{
@@ -598,18 +599,17 @@ hr{
     text-transform: uppercase;
     box-shadow: 0 5px 10px rgba(0,0,0,0.23);
   }
-  .projects .card_box:nth-child(1) span::before{
-    content: "Portfolio";
-  }
-  .projects .card_box:nth-child(2) span::before{
-    content: "Interal apps";
-  }
-  .projects .card_box:nth-child(3) span::before{
-    content: "Public api's";
-  }
-  .projects .card_box:nth-child(4) span::before{
-    content: "Persnol";
-  }
+
+  .projects a:nth-of-type(1) .card_box span::before { content: "Fireflink"; }
+  .projects a:nth-of-type(2) .card_box span::before { content: "Quickbooks"; }
+  .projects a:nth-of-type(3) .card_box span::before { content: "Archarya"; }
+  .projects a:nth-of-type(4) .card_box span::before { content: "Arohas"; }
+  .projects a:nth-of-type(5) .card_box span::before { content: "JSpiders HR"; }
+
+
+
+
+
 
   .card_box span::after {
     content: '';
@@ -651,7 +651,7 @@ hr{
   .card {
     height: 100%;
     border-radius: 50px;
-    background: linear-gradient(135deg, rgb(0, 255, 214) 0%, rgb(8, 226, 96) 100%);
+    background: linear-gradient(135deg, #2a2a2a 0%, #111111 100%);
     transition: all 0.5s ease-in-out;
     transform-style: preserve-3d;
     box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
@@ -956,7 +956,7 @@ hr{
 
   }
   .db2{
-    background: url(./images/persnol.jpg);
+    background: url(./images/profilepicture.jpeg);
     background-size: cover;
     background-position: center 0px;
     width: 400px;
@@ -1026,7 +1026,7 @@ hr{
     top: 125px;
   }
   .cards{
-    width: 58%;
+    width: 100%;
     position: relative;
     scroll-snap-type:y mandatory;
   }
@@ -1162,7 +1162,7 @@ hr{
 
   /* -------------------------contact------------------- */
   .home-contact{
-    background: linear-gradient(130deg,#94ffa1,#cfdcdc);
+    background: linear-gradient(130deg, #1a1a1a, #000000);
     width: 100%;
     height: 600px;
     margin: 70px auto;
@@ -1363,7 +1363,7 @@ hr{
 
   }
   .db2{
-    background: url(./images/persnol.jpg);
+    background: url(./images/profilepicture.jpeg);
     background-size: cover;
     background-position: center 0px;
     width: 300px;
@@ -1435,7 +1435,7 @@ hr{
     top: 125px;
   }
   .cards{
-    width: 68%;
+    width: 100%;
     position: relative;
     scroll-snap-type:y mandatory;
   }
@@ -1579,7 +1579,7 @@ hr{
 
   /* -------------------------contact------------------- */
   .home-contact{
-    background: linear-gradient(130deg,#94ffa1,#cfdcdc);
+    background: linear-gradient(130deg, #1a1a1a, #000000);
     width: 100%;
     height: 600px;
     margin: 70px auto;
@@ -1807,7 +1807,7 @@ hr{
     flex-direction: column-reverse;
   }
   .db2{
-    background: url(./images/persnol.jpg);
+    background: url(./images/profilepicture.jpeg);
     background-size: cover;
     background-position: center 0px;
     width: 250px;
@@ -1978,7 +1978,7 @@ hr{
     display: none;
   }
   .cards{
-    width: 90%;
+    width: 100%;
     position: relative;
     scroll-snap-type:y mandatory;
   }
@@ -2118,7 +2118,7 @@ hr{
     font-weight: 700;
   }
   .home-contact{
-    background: linear-gradient(130deg,#94ffa1,#cfdcdc);
+    background: linear-gradient(130deg, #1a1a1a, #000000);
     width: 100%;
     height: 600px;
     margin: 70px auto;
@@ -2251,18 +2251,17 @@ hr{
     text-transform: uppercase;
     box-shadow: 0 5px 10px rgba(0,0,0,0.23);
   }
-  .projects .card_box:nth-child(1) span::before{
-    content: "Portfolio";
-  }
-  .projects .card_box:nth-child(2) span::before{
-    content: "Interal apps";
-  }
-  .projects .card_box:nth-child(3) span::before{
-    content: "Public api's";
-  }
-  .projects .card_box:nth-child(4) span::before{
-    content: "Persnol";
-  }
+
+  .projects a:nth-of-type(1) .card_box span::before { content: "Fireflink"; }
+  .projects a:nth-of-type(2) .card_box span::before { content: "Quickbooks"; }
+  .projects a:nth-of-type(3) .card_box span::before { content: "Archarya"; }
+  .projects a:nth-of-type(4) .card_box span::before { content: "Arohas"; }
+  .projects a:nth-of-type(5) .card_box span::before { content: "JSpiders HR"; }
+
+
+
+
+
 
   .card_box span::after {
     content: '';
@@ -2304,7 +2303,7 @@ hr{
   .card {
     height: 100%;
     border-radius: 50px;
-    background: linear-gradient(135deg, rgb(0, 255, 214) 0%, rgb(8, 226, 96) 100%);
+    background: linear-gradient(135deg, #2a2a2a 0%, #111111 100%);
     transition: all 0.5s ease-in-out;
     transform-style: preserve-3d;
     box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;

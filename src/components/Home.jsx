@@ -5,14 +5,14 @@ import js from '../images/js.png'
 import react from '../images/react.png'
 import node from '../images/node.png'
 import expressjs from '../images/expressjs.webp'
-import bootstrap from '../images/bootstrap.png'
-import tech from '../assets/tech.mp4'
 
 
-import portfolio from '../images/portfolio.webp'
-import org from '../images/org.png'
-import ext from '../images/ext.png'
-import persnal from '../images/persnolapp.png'
+
+import fireflink from '../images/fireflink.png';
+import quickbooks from '../images/quickbooks.jpg';
+import acharya from '../images/acharya.png';
+import logo from '../images/logo.jfif';
+import jspiders from '../images/jspiders.jpg';
 import Contact from "./Contact.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -86,40 +86,51 @@ const Home = () => {
                 <div className="skills">
                     <h1>IT Proficiency</h1>
                     <div className="skill-cont">
-                        <div className="sider" >
-                        </div>
-                        <div className="cards" data-aos="fade-left">
-                            <div>
-                                <p>Skilled in Core Java, object-oriented programming, data structures, and algorithm design. Proficient in debugging, optimizing code performance, and ensuring quality through unit testing and coding best practices.</p>
-                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="java" />
+
+                        <div className="cards" data-aos="fade-left" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src={html} alt="html" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>HTML</p>
                             </div>
-                            <div>
-                                <img src={html} alt="java" />
-                                <p>Skilled in crafting clean, semantic HTML5 for cross-browser compatibility. Proficient in multimedia, forms, and SEO-friendly semantic tags. Capable with CSS and JavaScript for enhanced interactivity and design.</p>
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src={css} alt="css" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>CSS</p>
                             </div>
-                            <div>
-                                <p>CSS expert with mastery in CSS3, excelling in visually appealing and responsive designs. Proficient in Bootstrap, Sass, and adept at intricate layouts, animations, and cross-browser compatibility for precision.</p>
-                                <img src={css} alt="css" />
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src={js} alt="js" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>Javascript</p>
                             </div>
-                            <div>
-                                <img src={js} alt="javascript" />
-                                <p>Proficient in JavaScript, I leverage its capabilities to develop dynamic and interactive web applications. Expert in utilizing frameworks and libraries for seamless functionality across various browsers.</p>
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="ts" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>Typescript</p>
                             </div>
-                            <div>
-                                <p>Skilled in React.js for dynamic, interactive web apps with Redux for state management, API integration, and optimizing performance. Proficient in component-based UI development and React Hooks usage.</p>
-                                <img src={react} alt="react" />
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src={react} alt="react" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>React js</p>
                             </div>
-                            <div>
-                                <img src={node} alt="node" />
-                                <p>Node.js expert with Express.js for web apps/RESTful APIs. Proficient in SQL/NoSQL databases, security implementation, performance optimization, and cloud deployment for efficient, scalable solutions.</p>
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src={node} alt="node" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>Node js</p>
                             </div>
-                            <div>
-                                <p>Skilled in building scalable server-side apps with Express.js on Node.js, specializing in RESTful API design, middleware, routing, and adept at integrating SQL/NoSQL databases for secure authentication.</p>
-                                <img src={expressjs} alt="express" />
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src={expressjs} alt="expressjs" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>Express js</p>
                             </div>
-                            <div>
-                                <p>Skilled in Bootstrap, I craft sleek, responsive web interfaces using its robust framework. I adeptly customize themes, ensuring a cohesive, branded look with cross-browser compatibility.</p>
-                                <img src={bootstrap} alt="bootstrap" />
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="graphql" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>graphql</p>
+                            </div>
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src="https://cdn-icons-png.flaticon.com/512/2906/2906274.png" alt="mongodb" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>Mongo db</p>
+                            </div>
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="java" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>core java</p>
+                            </div>
+                            <div style={{ width: '150px', height: '150px', flexDirection: 'column', textAlign: 'center', margin: '0' }}>
+                                <img src="https://www.anthropic.com/images/icons/claude-app-icon.svg" alt="claude" style={{ width: '60px', margin: '10px auto' }} />
+                                <p style={{ width: '100%', fontSize: '14px', textAlign: 'center' }}>claude code</p>
                             </div>
                         </div>
                     </div>
@@ -130,10 +141,7 @@ const Home = () => {
                 <div className="about" name="more">
                     <div>
                         <h1 data-aos="fade-left">About my <span>WORK</span></h1>
-                        <p data-aos="fade-right">I am a front end web developer and a passionate trainer , i have been 
-                            in 2 internal projects of an organization and i have trained more than <span>4000+</span> 
-                            engineering graduates on <span>HTML</span> , <span>CSS</span> and <span>JS</span> and <span>2000+</span> students on <span>React JS</span>
-                        </p>
+                        <p data-aos="fade-right">Front-End Software Engineer with 5.4 years of experience building scalable React & TypeScript applications across enterprise and product environments. Experienced in subscription lifecycle platforms, analytics instrumentation, performance optimization, accessibility (WCAG), and frontend architecture. Passionate about building maintainable, high-quality user experiences while mentoring engineers and driving engineering excellence.</p>
                         <img  data-aos="fade-up-left" src="https://cdn.dribbble.com/users/2403158/screenshots/5841419/how_to_get_support_2.gif" alt="" />
                     </div>
                     <div>
@@ -143,7 +151,7 @@ const Home = () => {
 
                 <div className="home-contact" name="contact-me">
                     <div  data-aos="fade-down">
-                        <form>
+                        <form onSubmit={(e) => { e.preventDefault(); alert('thanks ! will be in touch soon..'); window.location.reload(); }}>
                             <input type="text" placeholder="Name" />
                             <input type="text" placeholder="Email" />
                             <input type="text" placeholder="Phone" />
@@ -211,23 +219,38 @@ const Home = () => {
                 </div>
 
                 <div className="projects" name="projects">
+                    <h1 style={{color: 'white', zIndex: 10, textAlign: 'center', width: '100%', marginBottom: '20px'}}>Projects</h1>
                     {/* <video src={tech} loop autoPlay muted></video> */}
-                    <div className="card_box" data-aos="fade-down-left" data-aos-delay="000">
-                        <span></span>
-                        <img src={portfolio} alt="portfolio" />
-                    </div>
-                    <div className="card_box"  data-aos="fade-down-left" data-aos-delay="200">
-                        <span></span>
-                        <img src={org} alt="portfolio" />
-                    </div>
-                    <div className="card_box"  data-aos="fade-down-left" data-aos-delay="400">
-                        <span></span>
-                        <img src={ext} alt="portfolio" />
-                    </div>
-                    <div className="card_box"  data-aos="fade-down-left" data-aos-delay="600">
-                        <span></span>
-                        <img src={persnal} alt="portfolio" />
-                    </div>
+                    <a href="https://www.fireflink.com/" target="_blank" rel="noreferrer">
+                        <div className="card_box" data-aos="fade-down-left" data-aos-delay="000">
+                            <span></span>
+                            <img src={fireflink} alt="fireflink" />
+                        </div>
+                    </a>
+                    <a href="https://quickbooks.intuit.com/" target="_blank" rel="noreferrer">
+                        <div className="card_box"  data-aos="fade-down-left" data-aos-delay="200">
+                            <span></span>
+                            <img src={quickbooks} alt="quickbooks" />
+                        </div>
+                    </a>
+                    <a href="https://www.acharyainternational.com/" target="_blank" rel="noreferrer">
+                        <div className="card_box"  data-aos="fade-down-left" data-aos-delay="400">
+                            <span></span>
+                            <img src={acharya} alt="acharya" />
+                        </div>
+                    </a>
+                    <a href="https://arohas-fe.vercel.app/" target="_blank" rel="noreferrer">
+                        <div className="card_box"  data-aos="fade-down-left" data-aos-delay="600">
+                            <span></span>
+                            <img src={logo} alt="arohas" />
+                        </div>
+                    </a>
+                    <a href="https://devhr.qspiders.com/" target="_blank" rel="noreferrer">
+                        <div className="card_box"  data-aos="fade-down-left" data-aos-delay="800">
+                            <span></span>
+                            <img src={jspiders} alt="jspiders" />
+                        </div>
+                    </a>
                 </div>
     </div>);
 }
