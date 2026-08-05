@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import html from '../images/html.png'
 import css from '../images/css.png'
 import js from '../images/js.png'
@@ -13,7 +12,6 @@ import quickbooks from '../images/quickbooks.jpg';
 import acharya from '../images/acharya.png';
 import logo from '../images/logo.jfif';
 import jspiders from '../images/jspiders.jpg';
-import Contact from "./Contact.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
