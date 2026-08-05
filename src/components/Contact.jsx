@@ -1,5 +1,3 @@
-import Navbar from "./Navbar";
-
 const Contact = () => {
     return (<div className="contact-page">
         <div className="contact-form">
