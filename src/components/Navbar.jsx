@@ -1,9 +1,6 @@
 import { useState } from "react";
 // import { Link } from "react-router-dom";
 import cv from '../assets/resume.pdf'
-import * as Scroll from 'react-scroll';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
 
 const Navbar = () => {
     let[menu , setMenu] = useState(false);
